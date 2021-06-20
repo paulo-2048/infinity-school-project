@@ -16,11 +16,11 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] Tarefa 1
-- [x] Tarefa 2
-- [x] Tarefa 3
-- [ ] Tarefa 4
-- [ ] Tarefa 5
+- [x] Criação da lógica
+- [x] Criação dos Recursos Essenciais
+- [x] Conexão com Banco de Dados
+- [ ] Criação do Front-End (Parte vísivel para usuário)
+- [ ] Refinamento e Lançamento do Beta
 
 ## 💻 Pré-requisitos
 
