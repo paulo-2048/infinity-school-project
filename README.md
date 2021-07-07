@@ -2,15 +2,15 @@
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/Paulo-2048/infinity-school-project?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/Paulo-2048/infinity-school-project?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/Paulo-2048/infinity-school-project?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/Paulo-2048/infinity-school-project?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Paulo-2048/infinity-school-project?style=for-the-badge)
 
-<img src="exemplo-image.png" alt="exemplo imagem">
+<!-- <img src="exemplo-image.png" alt="exemplo imagem"> -->
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+> O projeto consiste em criar uma plataforma para gerenciamento logistíco para fornecdores, com foco no modelo de dropshipping. (Ainda está sendo Construído)
 
 ### Ajustes e melhorias
 
