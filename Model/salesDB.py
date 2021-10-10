@@ -12,48 +12,51 @@ class Connection_to_manager:
             command.execute(sql, (sale.idCode, sale.name,
                             sale.price, sale.category))
             self.conecction.commit()
+            return True
         except Error as e:
             print(e)
             pass
 
-    def Listing(self):
+    def listing(self):
         try:
             sql = 'SELECT * FROM  Sales_management'
             command = self.conecction.cursor()
             command.execute(sql)
-            self.conecction.commit()
+            rows = command.fetchall()
+            return rows
         except Error as e:
             print(e)
             pass
 
-    def Delete_data(self, sale):
+    def delete_data(self, idCode):
         try:
-            sql = 'DELETE from Sales_management WHERE id = %s;'
+            sql = 'DELETE from Sales_management WHERE idCode = %s;'
             command = self.conecction.cursor()
-            command.execute(sql(sale.idCode))
+            command.execute(sql, (idCode,))
             self.conecction.commit()
+            return True
         except Error as e:
             print(e)
             pass
 
-    def Update_data(self, column, sale):
+    def update_data(self, column, value, idCode):
         try:
             if column == 1:
-                sql = 'UPDATE Sales_management SET %s = %s WHERE idCode = %s ;'
+                sql = 'UPDATE Sales_management SET Product_name = %s WHERE idCode = %s ;'
                 command = self.conecction.cursor()
-                command.execute(sql('Product_name', sale.name, sale.idCode))
+                command.execute(sql, (value, idCode))
                 self.conecction.commit()
             if column == 2:
-                sql = 'UPDATE Sales_management SET %s = %s WHERE idCode = %s ;'
+                sql = 'UPDATE Sales_management SET Price_products = %s WHERE idCode = %s ;'
                 command = self.conecction.cursor()
-                command.execute(sql('Price_products', sale.price, sale.idCode))
+                command.execute(sql, (value, idCode))
                 self.conecction.commit()
             if column == 3:
-                sql = 'UPDATE Sales_management SET %s = %s WHERE idCode = %s ;'
+                sql = 'UPDATE Sales_management SET Product_category = %s WHERE idCode = %s;'
                 command = self.conecction.cursor()
-                command.execute(
-                    sql('Product_category', sale.category, sale.idCode))
+                command.execute(sql, (value, idCode))
                 self.conecction.commit()
+                return True
         except Error as e:
             print(e)
             pass

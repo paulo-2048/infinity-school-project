@@ -11,10 +11,28 @@ print(x)
 
 bankSales = connectSales.Connection_to_manager(bank.con)
 
-new_sale = saleClass.Sale(
-    codeGeneratorModule.codeGenerator(), 'Produto Teste', 4.50, 'Limpeza')
+# new_sale = saleClass.Sale(
+#     codeGeneratorModule.codeGenerator(), 'Produto Teste 2', 4.50, 'Teste')
 
-bankSales.insertProduct(new_sale)
+# verification = bankSales.insertProduct(new_sale)
+
+# verification = bankSales.delete_data('')
+
+# verification = bankSales.update_data(3, 'Deu Certo', 73118277)
+
+# if verification:
+#     print('Deu Certo')
+
+
+y = bankSales.listing()
+
+for i in y:
+    print(f'''Code: {i[0]}
+Nome: {i[1]}
+Preço: {i[2]}
+Categoria: {i[4]}
+Data e Hora: {i[3]}
+    ''')
 
 
 # Cadastrar vendas
